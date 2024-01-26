@@ -1,0 +1,16 @@
+// для jest
+//{
+//  "presets": [
+//    "@babel/preset-env",
+//    "@babel/preset-typescript",
+//    [
+//      "@babel/preset-react",
+//      {
+//        "runtime": "automatic"
+//      }
+//    ]
+//  ]
+//}
+
+//можно в этом месте хранить конфиг или можно вынести все в файл config/babel/buildBabelLoader
+

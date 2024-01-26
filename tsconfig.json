@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext", //была es6, чтобы использовать полноценно импорты и экспорты. А теперь поставили так, чтобы поддерживать ts
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, //этот флаг позволяет импортировать не через require, а через import
+    "esModuleInterop": true, // позволяет не писать "import * as React from 'react'", а чтобы сразу можно было писать "import React from 'react'"
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "ts-node": { //переопределяем компилер на ts node
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
